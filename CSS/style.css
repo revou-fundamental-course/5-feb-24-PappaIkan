@@ -1,0 +1,6 @@
+.input_Temperatur{
+    width: 70%;
+    height: 15vh; 
+    box-sizing: border-box; 
+    word-wrap: break-word;
+}
