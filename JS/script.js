@@ -1,7 +1,6 @@
 function konversiSuhu() {
     var inputCelsius = parseFloat(document.getElementById('input_Temperatur').value);
 
-
     if (isNaN(inputCelsius)) {
         alert('Masukkan suhu dalam bentuk angka!');
         return;
@@ -9,8 +8,9 @@ function konversiSuhu() {
 
     var hasilFahrenheit = (inputCelsius * 9/5) + 32;
 
-    document.getElementById('nilaiTemperatur').value = hasilFahrenheit.toFixed(2);
-    document.getElementById('Cara_Perhitungan').value = `${inputCelsius} * (9/5) + 32 = ${hasilFahrenheit.toFixed(2)}°F`;
+    document.getElementById('nilaiTemperatur').value = parseInt(hasilFahrenheit);
+
+    document.getElementById('Cara_Perhitungan').value = `${inputCelsius} * (9/5) + 32 = ${parseInt(hasilFahrenheit)}°F`;
 }
 
 function resetForm() {
@@ -28,8 +28,7 @@ function reverseKonversi() {
     }
 
     var hasilCelsius = (inputFahrenheit - 32) * 5/9;
-
-    document.getElementById('input_Temperatur').value = hasilCelsius.toFixed(2);
-
-    document.getElementById('Cara_Perhitungan').value = `${inputFahrenheit} Fahrenheit (°F) setara dengan ${hasilCelsius.toFixed(2)} Celsius (°C)`;
+    
+    document.getElementById('input_Temperatur').value = parseInt(hasilCelsius);
+    document.getElementById('Cara_Perhitungan').value = `${inputFahrenheit} Fahrenheit (°F) setara dengan ${parseInt(hasilCelsius)} Celsius (°C)`;
 }
