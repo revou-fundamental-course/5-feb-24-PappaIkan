@@ -11,6 +11,10 @@ function konversiSuhu() {
     document.getElementById('nilaiTemperatur').value = parseInt(hasilFahrenheit);
 
     document.getElementById('Cara_Perhitungan').value = `${inputCelsius} * (9/5) + 32 = ${parseInt(hasilFahrenheit)}°F`;
+
+    var teksElement = document.getElementById('perubahan');
+    teksElement.innerHTML = "Farenheit ke Celsius";
+
 }
 
 function resetForm() {
@@ -31,4 +35,7 @@ function reverseKonversi() {
     
     document.getElementById('input_Temperatur').value = parseInt(hasilCelsius);
     document.getElementById('Cara_Perhitungan').value = `${inputFahrenheit} Fahrenheit (°F) setara dengan ${parseInt(hasilCelsius)} Celsius (°C)`;
+
+    var teksElement = document.getElementById('perubahan');
+    teksElement.innerHTML = "Celsius ke Farenheit";
 }

@@ -11,17 +11,19 @@
         <p>Masukkan suhu derajat Celsius (°C) ke dalam kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
         
         <p>Celsius (°C):</p>
-        <input type="number" class="input_Temperatur" id="input_Temperatur" placeholder="Masukkan temperatur" required><br>
+        <textarea type="number" class="input_Temperatur" id="input_Temperatur" placeholder="Masukkan temperatur" required></textarea><br>
         
         <button onclick="konversiSuhu()">Konversi</button>
         <button onclick="resetForm()">Reset</button>
         <button onclick="reverseKonversi()">Reverse</button>
         
         <p>Fahrenheit (°F):</p>
-        <input type="text" class="input_Temperatur" id="nilaiTemperatur" placeholder="Hasil konversi" readonly>
+        <textarea type="text" class="input_Temperatur" id="nilaiTemperatur" placeholder="Hasil konversi" readonly></textarea>
         
         <p>Cara Kalkulasi:</p>
         <textarea class="input_Temperatur" id="Cara_Perhitungan" placeholder="Penjelasan konversi" readonly></textarea>
+
+        <p id="perubahan">Fahrenheit ke Celsius</p>
 
         <p>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F):</p>
     </div>
