@@ -4,3 +4,23 @@
     box-sizing: border-box; 
     word-wrap: break-word;
 }
+
+.bold-teks{
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.cara-konversi{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rumus-konversi{
+    font-size: 25px;
+    margin-top: 2em;
+}
+
+.konversi-rumus{
+    font-size: 23px;
+    margin-top: 1em;
+}
