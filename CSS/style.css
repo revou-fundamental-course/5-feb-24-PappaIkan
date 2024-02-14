@@ -5,6 +5,10 @@
     word-wrap: break-word;
 }
 
+.perubahan-konversi{
+    color: rgb(128, 22, 154);
+}
+
 .bold-teks{
     font-size: 1.5em;
     font-style: italic;
